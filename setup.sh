@@ -23,6 +23,7 @@ mv Tests/XnTemplateTests/XnTemplateTests.swift Tests/${libname}Tests/${libname}T
 echo "Renaming file contents..."
 
 sed -i '' "s/XnTemplate/$libname/g" Package.swift
+sed -i '' "s/XnTemplate/$libname/g" Sources/$libname/$libname.swift
 sed -i '' "s/XnTemplate/$libname/g" Tests/${libname}Tests/${libname}Tests.swift
 sed -i '' "s/XnTemplate/$libname/g" README.md
 
