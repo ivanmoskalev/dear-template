@@ -15,9 +15,7 @@ fi
 echo "Moving files and renaming them..."
 
 mv Sources/XnTemplate/XnTemplate.swift Sources/$libname/$libname.swift
-mv Sources/XnTemplate Sources/$libname
-mv Tests/XnTemplateTests/XnTemplateTests.swift Tests/XnTemplateTests/${libname}Tests.swift
-mv Tests/XnTemplateTests Tests/${libname}Tests
+mv Tests/XnTemplateTests/XnTemplateTests.swift Tests/${libname}Tests/${libname}Tests.swift
 
 echo "Renaming file contents..."
 
