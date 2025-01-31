@@ -20,6 +20,9 @@ mkdir -p Tests/${libname}Tests
 mv Sources/XnTemplate/XnTemplate.swift Sources/$libname/$libname.swift
 mv Tests/XnTemplateTests/XnTemplateTests.swift Tests/${libname}Tests/${libname}Tests.swift
 
+rm -r Sources/XnTemplate
+rm -r Sources/XnTemplateTests
+
 echo "Renaming file contents..."
 
 sed -i '' "s/XnTemplate/$libname/g" Package.swift
