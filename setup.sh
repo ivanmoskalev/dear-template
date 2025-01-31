@@ -23,6 +23,7 @@ echo "Renaming file contents..."
 
 sed -i '' "s/XnTemplate/$libname/g" Package.swift
 sed -i '' "s/XnTemplate/$libname/g" Tests/${libname}Tests/${libname}Tests.swift
+sed -i '' "s/XnTemplate/$libname/g" README.md
 
 echo "Library setup complete. Self-destructing setup.sh..."
 
