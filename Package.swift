@@ -15,5 +15,6 @@ let package = Package(
     targets: [
         .target(name: "XnTemplate"),
         .testTarget(name: "XnTemplateTests", dependencies: ["XnTemplate"]),
+        .testTarget(name: "XnTemplatePerformance", dependencies: ["XnTemplate"]),
     ]
 )
