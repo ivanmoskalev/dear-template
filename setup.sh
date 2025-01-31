@@ -14,6 +14,9 @@ fi
 
 echo "Moving files and renaming them..."
 
+mkdir -p Sources/$libname
+mkdir -p Tests/${libname}Tests
+
 mv Sources/XnTemplate/XnTemplate.swift Sources/$libname/$libname.swift
 mv Tests/XnTemplateTests/XnTemplateTests.swift Tests/${libname}Tests/${libname}Tests.swift
 
