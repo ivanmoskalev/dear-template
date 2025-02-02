@@ -1,4 +1,4 @@
-name: Tests
+name: tests
 
 on:
   push:
@@ -12,13 +12,26 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - name: Run unit tests
-        run: swift test -v --parallel --filter XnTemplateTests
+      - name: unit tests
+        run: swift test --parallel --filter Unit --enable-code-coverage
+      - name: coverage
+        uses: sersoft-gmbh/swift-coverage-action@v4.0
+      - name: codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
+          
 
   performance-tests:
     runs-on: macos-15
 
     steps:
       - uses: actions/checkout@v4
-      - name: Run performance tests
-        run: swift test -v --filter XnTemplatePerformance -Xswiftc -O
+      - name: perf tests
+        run: swift test --filter Performance --enable-code-coverage -Xswiftc -O
+      - name: coverage
+        uses: sersoft-gmbh/swift-coverage-action@v4.0
+      - name: codecov
+        uses: codecov/codecov-action@v5
+        with:
+          token: ${{ secrets.CODECOV_TOKEN }}
