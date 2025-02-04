@@ -4,17 +4,17 @@
 import PackageDescription
 
 let package = Package(
-    name: "XnTemplate",
+    name: "DearTemplate",
     platforms: [
         .macOS(.v10_15),
         .iOS(.v15)
     ],
     products: [
-        .library(name: "XnTemplate", targets: ["XnTemplate"]),
+        .library(name: "DearTemplate", targets: ["DearTemplate"]),
     ],
     targets: [
-        .target(name: "XnTemplate"),
-        .testTarget(name: "XnTemplateUnit", dependencies: ["XnTemplate"]),
-        .testTarget(name: "XnTemplatePerformance", dependencies: ["XnTemplate"]),
+        .target(name: "DearTemplate"),
+        .testTarget(name: "DearTemplateUnit", dependencies: ["DearTemplate"]),
+        .testTarget(name: "DearTemplatePerformance", dependencies: ["DearTemplate"]),
     ]
 )

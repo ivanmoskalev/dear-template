@@ -1,12 +1,12 @@
-# XnTemplate
-> this library is part of [xn](https://github.com/ivanmoskalev/xn) suite
+# DearTemplate
+> this library is part of [dear](https://github.com/ivanmoskalev/dear) suite
 
 ## Installation
 
-XnTemplate is distributed via Swift Package Manager.
+DearTemplate is distributed via Swift Package Manager.
 
 ```swift
-.package(url: "https://github.com/ivanmoskalev/XnTemplate.git", from: "1.0.0")
+.package(url: "https://github.com/ivanmoskalev/DearTemplate.git", from: "1.0.0")
 ```
 
 ## Contributing
@@ -15,4 +15,4 @@ Please note that contributions are accepted if they align with the vision for th
 
 ## License
 
-This project (and the rest of the xn suite) is released into the public domain under [The Unlicense](https://unlicense.org/). Do whatever you want with it however you want.
+This project (and the rest of the dear suite) is released into the public domain under [The Unlicense](https://unlicense.org/). Do whatever you want with it however you want.
